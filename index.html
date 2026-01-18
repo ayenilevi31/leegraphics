@@ -3,7 +3,20 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>LeeGraphics</title>
+    
+    <title>LeeGraphics | Brand Identity & Graphic Design Portfolio</title>
+    <meta name="description" content="Explore the creative portfolio of Ayeni Miracle Levi (LeeGraphics). Specialized in high-impact flyer design, brand identity, and professional logos.">
+    <meta name="keywords" content="LeeGraphics, Ayeni Miracle Levi, Graphic Designer Nigeria, Brand Identity, Logo Designer, Flyer Design Expert">
+    <meta name="author" content="Ayeni Miracle Levi">
+    
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+
+    <meta property="og:title" content="LeeGraphics | Professional Brand Design">
+    <meta property="og:description" content="Design that defines. View my latest creative archive.">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://leegraphics.vercel.app/">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -31,6 +44,7 @@
             --text-color: #111827;
             --text-dim: #6b7280;
             --border-color: #e5e7eb;
+            --pattern-color: rgba(0, 123, 255, 0.05);
         }
 
         .dark {
@@ -39,34 +53,21 @@
             --text-color: #ffffff;
             --text-dim: #9ca3af;
             --border-color: #30363d;
+            --pattern-color: rgba(255, 255, 255, 0.03);
         }
 
         body {
             font-family: 'Instrument Sans', sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
+            background-image: radial-gradient(var(--pattern-color) 1px, transparent 1px);
+            background-size: 30px 30px;
             transition: background-color 0.3s ease;
         }
 
         h1, h2, h3, h4, .font-heading {
             font-family: 'Space Grotesk', sans-serif;
             letter-spacing: -0.03em;
-        }
-
-        .collage-container {
-            position: absolute; top: 0; left: 0; width: 250%; height: 100%; opacity: 0.06; pointer-events: none;
-            display: grid; grid-template-columns: repeat(25, 1fr); gap: 1.5rem; padding: 2rem;
-            animation: scroll-linear 120s linear infinite;
-        }
-        @keyframes scroll-linear {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-        .collage-item {
-            font-family: 'Space Grotesk', sans-serif;
-            background: #007bff;
-            height: 100px; width: 140px; border-radius: 12px; display: flex; align-items: center; 
-            justify-content: center; color: white; font-weight: 800; font-size: 0.8rem;
         }
 
         .social-btn {
